@@ -35,7 +35,6 @@ NestOAuth2.prototype.connect = function(code) {
     var that = this;
     return new Promise(function(resolve, reject) {
         var accessTokenUrl = 'https://api.home.nest.com/oauth2/access_token';
-        console.log(accessTokenUrl)
         request(
             {
                 method: 'POST',
